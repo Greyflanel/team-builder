@@ -12,9 +12,6 @@ const [newTeamMember, setNewTeamMember] = useState(
 
 const onChangeHandler = event => {
 setNewTeamMember({ ...newTeamMember, [event.target.name]: event.target.value });
-console.log("ZXZXZXZXZX", event.target.value);
-console.log("TRICKY ", newTeamMember);
-
 };
 
 const onSubmitHandler = event => {

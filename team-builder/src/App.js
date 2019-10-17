@@ -9,8 +9,6 @@ const [teamMembers, setTeamMembers] = useState(data);
 console.log(teamMembers);
 
 const addNewMember = member => {
-  console.log("MEMBER", member);
-  
   setTeamMembers([...teamMembers, member])
 }
 

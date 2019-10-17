@@ -5,7 +5,6 @@ const Team = props => {
 
   return (
     <div>
-      Team
       {props.teamList.map((member, index) => (
         <div key={index}>
           <h1>{member.name}</h1>
