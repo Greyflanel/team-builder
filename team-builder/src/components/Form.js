@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 const Form = props => {
 const [newTeamMember, setNewTeamMember] = useState(
     {
@@ -11,7 +12,9 @@ const [newTeamMember, setNewTeamMember] = useState(
 
 const onChangeHandler = event => {
 setNewTeamMember({ ...newTeamMember, [event.target.name]: event.target.value });
-console.log(event.target.value);
+console.log("ZXZXZXZXZX", event.target.value);
+console.log("TRICKY ", newTeamMember);
+
 };
 
 const onSubmitHandler = event => {
@@ -40,7 +43,7 @@ const onSubmitHandler = event => {
                 <input 
                 name="email"
                 id="email"
-                type="email"
+                type="text"
                 placeholder="email"
                 value={newTeamMember.email}
                 onChange={onChangeHandler}
@@ -54,6 +57,7 @@ const onSubmitHandler = event => {
                 value={newTeamMember.role}
                 onChange={onChangeHandler}
                 />
+                <button type="submit">Submit</button>
             </form>
         </div>
     )
