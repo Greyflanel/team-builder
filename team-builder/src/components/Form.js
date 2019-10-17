@@ -43,7 +43,7 @@ const onSubmitHandler = event => {
                 <input 
                 name="email"
                 id="email"
-                type="text"
+                type="email"
                 placeholder="email"
                 value={newTeamMember.email}
                 onChange={onChangeHandler}
